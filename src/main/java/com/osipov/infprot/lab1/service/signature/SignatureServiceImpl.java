@@ -35,7 +35,7 @@ public class SignatureServiceImpl extends BaseService<Signature> implements Sign
         if (signatureRequest.getObjectName() != null && !signatureRequest.getObjectName().isBlank())
             signature.setObjectName(signatureRequest.getObjectName());
 
-        if (signatureRequest.getFirst8Bytes() != null && !signatureRequest.getFirst8Bytes().isBlank())
+        if (signatureRequest.getFirst8Bytes() != null)
             signature.setFirst8Bytes(signatureRequest.getFirst8Bytes());
 
         if (signatureRequest.getSignatureHash() != null && !signatureRequest.getSignatureHash().isBlank())

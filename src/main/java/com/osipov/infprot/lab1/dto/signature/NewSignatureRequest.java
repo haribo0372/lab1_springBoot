@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class NewSignatureRequest {
     private String objectName;
-    private String first8Bytes;
+    private byte[] first8Bytes;
     private String signatureHash;
     private Integer signatureTailLength;
     private String fileType;

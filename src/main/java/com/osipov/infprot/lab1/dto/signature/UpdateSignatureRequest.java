@@ -13,7 +13,7 @@ public class UpdateSignatureRequest {
     private Long id;
 
     private String objectName;
-    private String first8Bytes;
+    private byte[] first8Bytes;
     private String signatureHash;
     private Integer signatureTailLength;
     private String fileType;

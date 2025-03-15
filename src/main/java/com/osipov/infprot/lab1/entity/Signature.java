@@ -23,7 +23,8 @@ public class Signature extends BaseModel {
     private String objectName;
 
     @Column(name = "first8Bytes")
-    private String first8Bytes;
+    @Lob
+    private byte[] first8Bytes;
 
     @Column(name = "signatureHash")
     private String signatureHash;
